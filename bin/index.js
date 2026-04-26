@@ -252,7 +252,7 @@ if (ARGS.includes('-h') || ARGS.includes('--help')) {
   println('  Scaffold a .agent/ workflow directory for AI-assisted software teams.');
   println('');
   println(fmt.bold('  Usage'));
-  println('    npx create-agent-workflow');
+  println('    npx create-agent-workflow-template');
   println('');
   println(fmt.bold('  Options'));
   println('    -h, --help       Show this message');
@@ -285,7 +285,7 @@ async function main() {
   // Guard: must run in an interactive terminal
   if (!process.stdin.isTTY) {
     println(fmt.red('\n  ✗  Interactive terminal required.'));
-    println(fmt.dim('     Run directly: npx create-agent-workflow\n'));
+    println(fmt.dim('     Run directly: npx create-agent-workflow-template\n'));
     process.exit(1);
   }
 

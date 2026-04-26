@@ -11,7 +11,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Added
 
-- `bin/index.js` — interactive CLI scaffolder (`npx create-agent-workflow`)
+- `bin/index.js` — interactive CLI scaffolder (`npx create-agent-workflow-template`)
   - Zero external npm dependencies — only Node.js built-in modules (`fs`, `path`, `readline`)
   - Interactive prompts: project name, organization, description, package manager, catalog selection, developer role
   - Selective catalog copy — only copies catalog files chosen by the user; `general.md` and `cross-cutting.md` always included
