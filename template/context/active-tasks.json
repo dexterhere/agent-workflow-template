@@ -1,0 +1,23 @@
+{
+  "_meta": {
+    "sprint": "[SPRINT_NUMBER]",
+    "last_updated": "[YYYY-MM-DD]",
+    "note": "Template only. Replace with real active work for the target project."
+  },
+  "tasks": [
+    {
+      "assignee": "[TEAM_MEMBER_NAME]",
+      "role": "[ROLE_KEY]",
+      "active": [
+        {
+          "ticket": "[TICKET_ID]",
+          "title": "[TASK_TITLE]",
+          "module": "[MODULE_SLUG]",
+          "status": "[planned|in-progress|blocked|review|complete]",
+          "apps": ["[APP_PATH]"],
+          "notes": "[OPTIONAL_NOTES]"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "project": {
+    "name": "[PROJECT_NAME]",
+    "organization": "[ORGANIZATION_NAME]",
+    "description": "[ONE_SENTENCE_PROJECT_DESCRIPTION]",
+    "website": "[PROJECT_WEBSITE_OR_NA]",
+    "production_target": "[YYYY-MM-DD_OR_TBD]",
+    "documentation_url": "[DOCS_URL]",
+    "issue_tracker_url": "[ISSUE_TRACKER_URL]"
+  },
+  "sprint": {
+    "number": "[SPRINT_NUMBER]",
+    "goal": "[SPRINT_GOAL]",
+    "start_date": "[YYYY-MM-DD]",
+    "end_date": "[YYYY-MM-DD]",
+    "updated_at": "[YYYY-MM-DD]"
+  },
+  "repository": {
+    "package_manager": "[PACKAGE_MANAGER]",
+    "runtime_version": "[RUNTIME_VERSION]",
+    "apps": {
+      "[APP_PATH]": "[APP_DESCRIPTION]"
+    },
+    "packages": {
+      "[PACKAGE_PATH]": "[PACKAGE_DESCRIPTION]"
+    }
+  },
+  "stack": {
+    "runtime": "[RUNTIME_AND_VERSION]",
+    "backend_framework": "[BACKEND_FRAMEWORK]",
+    "frontend_framework": "[FRONTEND_FRAMEWORK]",
+    "mobile_framework": "[MOBILE_FRAMEWORK_OR_NA]",
+    "database": "[DATABASE]",
+    "cache": "[CACHE_OR_NA]",
+    "orm": "[ORM_OR_NA]",
+    "search": "[SEARCH_OR_NA]",
+    "storage": "[STORAGE_OR_NA]",
+    "package_manager": "[PACKAGE_MANAGER]",
+    "containerization": "[CONTAINERIZATION_OR_NA]",
+    "ci_cd": "[CI_CD_SYSTEM]",
+    "reverse_proxy": "[REVERSE_PROXY_OR_NA]",
+    "error_tracking": "[ERROR_TRACKING_OR_NA]",
+    "logging": "[LOGGING_OR_NA]",
+    "metrics": "[METRICS_OR_NA]"
+  },
+  "team": {
+    "_detail": "context/team.json"
+  },
+  "infrastructure": {
+    "provider": "[INFRA_PROVIDER_OR_NA]",
+    "environment": "[ENVIRONMENT_DESCRIPTION]",
+    "region": "[REGION_OR_NA]"
+  }
+}

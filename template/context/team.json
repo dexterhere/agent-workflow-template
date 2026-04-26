@@ -1,0 +1,11 @@
+{
+  "_note": "Template only. Replace with real team roles after copying into a project. Avoid private usernames or operational account names unless required.",
+  "roles": {
+    "[ROLE_KEY]": {
+      "name": "[TEAM_MEMBER_NAME]",
+      "profile_template": "[PROFILE_TEMPLATE_NAME]",
+      "primary_apps": ["[APP_PATH]"],
+      "primary_catalogs": ["[CATALOG_NAME]"]
+    }
+  }
+}

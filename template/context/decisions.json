@@ -1,0 +1,9 @@
+[
+  {
+    "id": "ADR-001",
+    "title": "[DECISION_TITLE]",
+    "status": "[proposed|accepted|locked|deprecated]",
+    "constraint": "[WHAT_AGENTS_MUST_FOLLOW]",
+    "docs_url": "[ADR_OR_DOCS_URL]"
+  }
+]

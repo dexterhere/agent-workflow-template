@@ -1,0 +1,56 @@
+{
+  "runtime": {
+    "name": "[RUNTIME_NAME]",
+    "version": "[RUNTIME_VERSION]"
+  },
+  "package_manager": {
+    "tool": "[PACKAGE_MANAGER]",
+    "note": "Use the configured package manager consistently."
+  },
+  "backend": {
+    "framework": "[BACKEND_FRAMEWORK]",
+    "language": "[BACKEND_LANGUAGE]",
+    "validation": "[VALIDATION_LIBRARY_OR_NA]",
+    "auth": "[AUTH_STACK_OR_NA]",
+    "docs": "[API_DOCS_TOOL_OR_NA]",
+    "notes": ["[BACKEND_RULE_OR_NOTE]"]
+  },
+  "frontend": {
+    "framework": "[FRONTEND_FRAMEWORK]",
+    "language": "[FRONTEND_LANGUAGE]",
+    "forms": "[FORM_LIBRARY_OR_NA]",
+    "validation": "[VALIDATION_LIBRARY_OR_NA]",
+    "styling": "[STYLING_APPROACH_OR_NA]",
+    "notes": ["[FRONTEND_RULE_OR_NOTE]"]
+  },
+  "mobile": {
+    "framework": "[MOBILE_FRAMEWORK_OR_NA]",
+    "data_fetching": "[MOBILE_DATA_FETCHING_OR_NA]",
+    "navigation": "[MOBILE_NAVIGATION_OR_NA]",
+    "notes": ["[MOBILE_RULE_OR_NOTE]"]
+  },
+  "database": {
+    "primary": "[DATABASE]",
+    "cache": "[CACHE_OR_NA]",
+    "search": "[SEARCH_OR_NA]",
+    "notes": ["[DATABASE_RULE_OR_NOTE]"]
+  },
+  "infrastructure": {
+    "containerization": "[CONTAINERIZATION_OR_NA]",
+    "reverse_proxy": "[REVERSE_PROXY_OR_NA]",
+    "ci_cd": "[CI_CD_SYSTEM]",
+    "storage": "[STORAGE_OR_NA]",
+    "hosting": "[HOSTING_OR_NA]",
+    "notes": ["[INFRA_RULE_OR_NOTE]"]
+  },
+  "observability": {
+    "error_tracking": "[ERROR_TRACKING_OR_NA]",
+    "logging": "[LOGGING_OR_NA]",
+    "metrics": "[METRICS_OR_NA]",
+    "tracing": "[TRACING_OR_NA]",
+    "notes": ["[OBSERVABILITY_RULE_OR_NOTE]"]
+  },
+  "internal_packages": {
+    "[PACKAGE_NAME]": "[PACKAGE_PATH_AND_PURPOSE]"
+  }
+}

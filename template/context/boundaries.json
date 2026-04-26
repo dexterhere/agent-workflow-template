@@ -1,0 +1,12 @@
+[
+  {
+    "path_or_pattern": "[PROTECTED_PATH_OR_PATTERN]",
+    "rule": "[BOUNDARY_RULE]",
+    "owner": "[OWNER_ROLE_OR_TEAM]"
+  },
+  {
+    "path_or_pattern": ".env, .env.local, .env.production, .env.staging, .env*.local",
+    "rule": "Never commit environment files or reproduce secret values in output.",
+    "owner": "[SECURITY_OR_PLATFORM_OWNER]"
+  }
+]

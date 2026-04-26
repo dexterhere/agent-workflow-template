@@ -1,0 +1,14 @@
+[
+  {
+    "name": "[MODULE_NAME]",
+    "slug": "[MODULE_SLUG]",
+    "status": "[planned|in-progress|complete|blocked|deferred]",
+    "sprint": "[SPRINT_NUMBER_OR_TBD]",
+    "owner_role": "[OWNER_ROLE_KEY]",
+    "assigned_to": "[TEAM_MEMBER_NAME_OR_UNASSIGNED]",
+    "apps": ["[APP_PATH]"],
+    "package": "[PACKAGE_PATH_OR_NA]",
+    "docs_url": "[MODULE_DOCS_URL]",
+    "notes": "[OPTIONAL_NOTES]"
+  }
+]
