@@ -1,0 +1,35 @@
+{
+  "name": "create-agent-workflow",
+  "version": "1.1.0",
+  "description": "Scaffold a .agent/ workflow directory for AI-assisted software teams",
+  "keywords": [
+    "ai-agents",
+    "claude-code",
+    "cursor",
+    "developer-workflow",
+    "prompt-engineering",
+    "ai-tooling",
+    "template",
+    "scaffold",
+    "agent-workflow"
+  ],
+  "license": "MIT",
+  "bin": {
+    "create-agent-workflow": "bin/index.js"
+  },
+  "files": [
+    "bin",
+    "template"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dexterhere/agent-workflow-template.git"
+  },
+  "homepage": "https://github.com/dexterhere/agent-workflow-template#readme",
+  "bugs": {
+    "url": "https://github.com/dexterhere/agent-workflow-template/issues"
+  }
+}

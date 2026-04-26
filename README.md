@@ -71,7 +71,17 @@ The three failure modes teams hit most:
 
 ## Quick start
 
-### Option A — GitHub Template (recommended)
+### Option A — npx (recommended)
+
+Run this inside your project directory:
+
+```bash
+npx create-agent-workflow
+```
+
+The CLI asks a few questions, copies only the catalog files your project needs, creates a `profile.md` for your role, and updates `.gitignore` automatically. Node.js 18+ required.
+
+### Option B — GitHub Template
 
 1. Click **Use this template** at the top of this page
 2. Name your repo and create it
@@ -79,12 +89,12 @@ The three failure modes teams hit most:
    ```bash
    cp -r template/ /path/to/your/project/.agent
    ```
-4. Follow `template/setup.md` to configure the template for your project
+4. Follow `template/setup.md` to configure the template
 
-### Option B — Clone directly
+### Option C — Clone directly
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/agent-workflow-template.git
+git clone https://github.com/dexterhere/agent-workflow-template.git
 cp -r agent-workflow-template/template/ /path/to/your/project/.agent
 ```
 
@@ -135,6 +145,24 @@ Each developer also sets up a local `profile.md` (gitignored) that defines their
 - Cursor
 - GitHub Copilot Workspace
 - Any agent tool that accepts a context file at session start
+
+---
+
+## Security
+
+The `npx create-agent-workflow` CLI is designed to be safe to run without hesitation:
+
+| Guarantee | Detail |
+|-----------|--------|
+| **Zero npm dependencies** | Only Node.js built-in modules (`fs`, `path`, `readline`). No supply chain attack surface. |
+| **No network requests** | Template files are bundled inside the package. Nothing is downloaded at run time. |
+| **No shell execution** | All file operations use `fs` APIs directly. No `exec`, `spawn`, or shell interpolation. |
+| **Path traversal protection** | Every file write is verified to stay inside your project's `.agent/` directory. |
+| **Safe file permissions** | All written files get `0o644` (owner read/write, group/other read-only). No executable bits set. |
+| **Input sanitization** | All user input is stripped of null bytes and control characters before use. |
+| **No postinstall scripts** | The package has no `scripts` field. Nothing runs on `npm install`. |
+| **Auditable source** | The entire CLI is a single readable file: [`bin/index.js`](bin/index.js). |
+| **`NO_COLOR` respected** | Set `NO_COLOR=1` to disable ANSI output (follows [no-color.org](https://no-color.org)). |
 
 ---
 
