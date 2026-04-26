@@ -1,5 +1,5 @@
 {
-  "name": "create-agent-workflow",
+  "name": "create-agent-workflow-template",
   "version": "1.1.0",
   "description": "Scaffold a .agent/ workflow directory for AI-assisted software teams",
   "keywords": [
@@ -15,7 +15,7 @@
   ],
   "license": "MIT",
   "bin": {
-    "create-agent-workflow": "bin/index.js"
+    "create-agent-workflow-template": "bin/index.js"
   },
   "files": [
     "bin",

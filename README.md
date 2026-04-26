@@ -76,7 +76,7 @@ The three failure modes teams hit most:
 Run this inside your project directory:
 
 ```bash
-npx create-agent-workflow
+npx create-agent-workflow-template
 ```
 
 The CLI asks a few questions, copies only the catalog files your project needs, creates a `profile.md` for your role, and updates `.gitignore` automatically. Node.js 18+ required.
