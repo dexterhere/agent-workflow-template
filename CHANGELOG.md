@@ -7,6 +7,28 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## [1.1.0] — 2026-04-26
+
+### Added
+
+- `bin/index.js` — interactive CLI scaffolder (`npx create-agent-workflow`)
+  - Zero external npm dependencies — only Node.js built-in modules (`fs`, `path`, `readline`)
+  - Interactive prompts: project name, organization, description, package manager, catalog selection, developer role
+  - Selective catalog copy — only copies catalog files chosen by the user; `general.md` and `cross-cutting.md` always included
+  - Profile filtering — removes references to skipped catalogs from the generated `profile.md`
+  - Auto-updates `.gitignore` to exclude `.agent/profile.md` when a git repo is detected
+  - Path traversal protection on every file write
+  - Input sanitization (strips null bytes and control characters)
+  - Explicit `0o644` file permissions — no executable bits
+  - `NO_COLOR` environment variable support ([no-color.org](https://no-color.org))
+  - `--help` and `--version` flags
+  - Graceful `SIGINT` (Ctrl+C) handling
+- `package.json` — npm package config (`name: create-agent-workflow`, no `scripts`, no `dependencies`)
+- Security section in root `README.md` documenting all safety guarantees
+- `npx create-agent-workflow` listed as the recommended quick-start option in `README.md`
+
+---
+
 ## [1.0.0] — 2026-04-26
 
 ### Added
@@ -48,4 +70,5 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Root `LICENSE` — MIT
 - Root `CHANGELOG.md` — this file
 
+[1.1.0]: https://github.com/dexterhere/agent-workflow-template/releases/tag/1.1.0
 [1.0.0]: https://github.com/dexterhere/agent-workflow-template/releases/tag/1.0.0
