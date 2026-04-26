@@ -48,4 +48,4 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Root `LICENSE` — MIT
 - Root `CHANGELOG.md` — this file
 
-[1.0.0]: https://github.com/YOUR_USERNAME/agent-workflow-template/releases/tag/v1.0.0
+[1.0.0]: https://github.com/dexterhere/agent-workflow-template/releases/tag/1.0.0
